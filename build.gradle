@@ -1,0 +1,115 @@
+/**
+ * gradle 主文件
+ */
+import java.text.SimpleDateFormat
+import org.apache.tools.ant.taskdefs.condition.Os
+
+// Settings
+ext {
+    // Project constants
+    github_org = 'organization'
+    project_group = 'com.example'
+    project_name = 'OneLevelProjects'
+    //project_version = '0.0.1-SNAPSHOT'
+    project_description = 'Template for Java, Gradle 学习讨论。。。'
+    project_jdk = '1.6'
+    project_web = '2.5'
+
+   
+}
+
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+
+// 引入jar包定义
+// 这个文件中定义的jar包可以直接在子项目中使用，不需要再次使用 apply from 这个语句
+
+apply from: 'dependency.gradle'
+
+
+
+subprojects { subproj ->
+
+    //group = project_group
+    // 这儿置为空值，否则 idea 生成的依赖包命名以此值开始
+    // 与 gradle 的打包规则有冲突
+    group = ""
+
+    apply plugin: 'java'
+    sourceCompatibility = project_jdk
+    targetCompatibility = project_jdk
+
+    apply plugin: 'maven'
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+
+    repositories {
+        maven { url 'http://192.168.7.30:9081/nexus/content/groups/public' }
+        maven { url 'http://192.168.7.30:9081/nexus/content/repositories/codehaus-public/'}
+    }
+
+    jar {
+
+        doFirst {
+            // 生成jar 包的时候按此规则生成 manifest 文件
+            manifest = defaultManifest({subproj})
+        }
+    }
+
+
+    // 编码改为 UTF-8, 否则编译源码的时候会出错
+    // 当然，这个需要根据自己的 java 源码的编码进行调整
+    [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+
+    configurations {
+
+    }
+    dependencies {
+        
+        // 通用依赖
+        compile(
+         
+            libraries.'logging',
+            libraries.'shiro-core',
+            
+            libraries.'slf4j-log4j',
+            libraries.'log4j'
+            
+        
+        )
+        
+        // 引入根目录和各子项目下的libs中的jar包
+
+        ext.jarTree = fileTree(dir: 'libs', include: '**/*.jar')
+        ext.rootProjectLibs = new File(rootProject.rootDir, 'libs').getAbsolutePath()
+        ext.jarTree += fileTree(dir: rootProjectLibs, include: '**/*.jar')
+
+        compile jarTree
+
+        // 测试依赖
+        testCompile (
+            libraries.'junit'
+        )
+    }
+
+
+
+    // 显示当前项目下所有用于 compile 的 jar.
+    //
+    task listJars(description: 'Display all compile jars.') << {
+        configurations.compile.each { File file -> println file.name }
+    }
+
+}
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+
+
+
