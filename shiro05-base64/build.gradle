@@ -1,0 +1,39 @@
+apply plugin: 'maven'
+
+// jar包的名字
+archivesBaseName = 'shiro05-base64'
+
+eclipse {
+	project {
+		name = 'shiro05-base64'
+	}
+}
+sourceSets{
+  description  = "第五章 编码/加密"
+    main{
+        java{srcDir "src/main/java"}
+        resources{srcDir "src/main/resources"}
+    }
+    test{
+        java{srcDir "src/test/java"}
+        resources{srcDir "src/test/resources"}
+    }
+}
+
+dependencies {
+
+    compile (
+       libraries.'beanutils',
+       libraries.'ehcache-core',
+       libraries.'mysql',
+       libraries.'druid'
+    )
+    
+    testCompile(
+    	
+    
+    )
+}
+
+
+

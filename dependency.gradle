@@ -70,8 +70,7 @@ ext.libraries = [
     "proxool": "com.cloudhopper.proxool:proxool:0.9.1",
     
     "druid": "com.alibaba:druid:0.2.23",
-    
-    
+    "ehcache-core": "net.sf.ehcache:ehcache-core:2.6.6",
     
     //  jstl
     "jstl": "jstl:jstl:1.2",
