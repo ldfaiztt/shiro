@@ -29,3 +29,7 @@ hs_err_pid*
 /shiro03-authorization/build
 /shiro03-authorization/.settings
 /shiro03-authorization/bin
+/shiro04-ini/.classpath
+/shiro04-ini/.project
+/shiro04-ini/.settings
+/shiro04-ini/bin

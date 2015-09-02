@@ -2,6 +2,9 @@ rootProject.name = 'shiro'
 
 include 'shiro02-authentication'
 include 'shiro03-authorization'
+include 'shiro04-ini'
+
+
 //include 'shiro01'
 
 

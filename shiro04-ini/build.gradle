@@ -1,0 +1,38 @@
+apply plugin: 'maven'
+
+// jar包的名字
+archivesBaseName = 'shiro04-ini'
+
+eclipse {
+	project {
+		name = 'shiro04-ini'
+	}
+}
+sourceSets{
+  description  = "第四章 ini配置"
+    main{
+        java{srcDir "src/main/java"}
+        resources{srcDir "src/main/resources"}
+    }
+    test{
+        java{srcDir "src/test/java"}
+        resources{srcDir "src/test/resources"}
+    }
+}
+
+dependencies {
+
+    compile (
+       libraries.'beanutils',
+       libraries.'mysql',
+       libraries.'druid'
+    )
+    
+    testCompile(
+    	
+    
+    )
+}
+
+
+
