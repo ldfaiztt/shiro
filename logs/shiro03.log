@@ -1,0 +1,23 @@
+2015-09-02 09:24:46:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:46:INFO main org.apache.shiro.config.IniSecurityManagerFactory - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+ 2015-09-02 09:24:46:INFO main org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
+ 2015-09-02 09:24:46:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:46:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:46:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:46:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:46:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:46:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:46:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:53:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:53:INFO main org.apache.shiro.config.IniSecurityManagerFactory - Realms have been explicitly set on the SecurityManager instance - auto-setting of realms will not occur.
+ 2015-09-02 09:24:53:ERROR main com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+ 2015-09-02 09:24:53:INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+ 2015-09-02 09:24:53:INFO main org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
+ 2015-09-02 09:24:53:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:53:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:53:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:53:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:53:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:53:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 2015-09-02 09:24:53:INFO main org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+ 
