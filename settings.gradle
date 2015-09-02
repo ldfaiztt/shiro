@@ -1,0 +1,10 @@
+rootProject.name = 'shiro'
+
+include 'shiro02-authentication'
+include 'shiro03-authorization'
+//include 'shiro01'
+
+
+
+
+
