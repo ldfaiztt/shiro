@@ -4,6 +4,8 @@ include 'shiro02-authentication'
 include 'shiro03-authorization'
 include 'shiro04-ini'
 include 'shiro05-base64'
+include 'shiro06-realm'
+include 'shiro07-web'
 
 
 

@@ -50,31 +50,21 @@ subprojects { subproj ->
         maven { url 'http://192.168.7.30:9081/nexus/content/repositories/codehaus-public/'}
     }
 
-    jar {
-
-        doFirst {
-            // 生成jar 包的时候按此规则生成 manifest 文件
-            manifest = defaultManifest({subproj})
-        }
-    }
+   
 
 
     // 编码改为 UTF-8, 否则编译源码的时候会出错
-    // 当然，这个需要根据自己的 java 源码的编码进行调整
     [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
-
 
     configurations {
 
     }
     dependencies {
-        
         // 通用依赖
         compile(
-         
-            libraries.'logging',
             libraries.'shiro-core',
-            
+         	libraries.'beanutils',
+            libraries.'logging',
             libraries.'slf4j-log4j',
             libraries.'log4j'
             
