@@ -6,6 +6,9 @@ include 'shiro04-ini'
 include 'shiro05-base64'
 include 'shiro06-realm'
 include 'shiro07-web'
+include 'shiro08-filter'
+
+
 
 
 
