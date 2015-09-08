@@ -17,7 +17,7 @@ ext.libraries = [
 
     "ant"        : "org.apache.ant:ant:1.8.4",
     "shiro-core" : "org.apache.shiro:shiro-core:${versions.shiro}",
-    "shiro-web" : "org.apache.shiro:shiro-web:${versions.shiro}",
+    "shiro-web"  : "org.apache.shiro:shiro-web:${versions.shiro}",
     
     "antlr"      : "antlr:antlr:2.7.7",
     
@@ -41,6 +41,10 @@ ext.libraries = [
         
     //  java ee 7
     // "javax:javaee-api:7.0",
+    "servlet-api" : "javax.servlet:javax.servlet-api:3.0.1",
+    "jsp-api"     : "javax.servlet:jsp-api:2.0",
+    "jstl"        : "javax.servlet:jstl:1.2",
+    
     
     //  springframework 
     "spring-aop"    : "org.springframework:spring-aop:${versions.spring}",
@@ -76,9 +80,6 @@ ext.libraries = [
     "ehcache-core": "net.sf.ehcache:ehcache-core:2.6.6",
     "ehcache"     : "net.sf.ehcache:ehcache:2.8.3",
     
-    //  jstl
-    "jstl"        : "jstl:jstl:1.2",
-    "standard"    : "taglibs:standard:1.1.2",
     
     
 	"jackson"     : "com.fasterxml.jackson.core:jackson-databind:2.5.4",
@@ -87,9 +88,6 @@ ext.libraries = [
     "quartz"      : "org.quartz-scheduler:quartz:2.1.7",
 
     "junit"       : "junit:junit:4.11",
-    "servlet-api" : "javax.servlet:javax.servlet-api:3.0.1",
-    "jsp-api"     : "javax.servlet:jsp-api:2.0",
-    "jstl"        : "javax.servlet:jstl:1.2",
     "standard"    : "taglibs:standard:1.1.2",
  
 
