@@ -49,8 +49,6 @@ dependencies {
     	libraries.'beanutils',
        	libraries.'servlet-api',
        	libraries.'shiro-web',
-       	libraries.'servlet-api',
-       	libraries.'jsp-api',
        	libraries.'jstl',
        	libraries.'mysql',
        	libraries.'druid'
