@@ -48,6 +48,7 @@ subprojects { subproj ->
     repositories {
         maven { url 'http://192.168.7.30:9081/nexus/content/groups/public' }
         maven { url 'http://192.168.7.30:9081/nexus/content/repositories/codehaus-public/'}
+        maven { url 'http://maven.oschina.net/content/groups/public'}
     }
 
    

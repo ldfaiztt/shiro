@@ -15,11 +15,13 @@ ext.versions = [
 
 ext.libraries = [
 
-    "ant"        : "org.apache.ant:ant:1.8.4",
-    "shiro-core" : "org.apache.shiro:shiro-core:${versions.shiro}",
-    "shiro-web"  : "org.apache.shiro:shiro-web:${versions.shiro}",
+    "ant"           : "org.apache.ant:ant:1.8.4",
+    "shiro-core"    : "org.apache.shiro:shiro-core:${versions.shiro}",
+    "shiro-web"     : "org.apache.shiro:shiro-web:${versions.shiro}",
+    "shiro-ehcache" : "org.apache.shiro:shiro-ehcache:${versions.shiro}",
+    "shiro-quartz"  : "org.apache.shiro:shiro-quartz:${versions.shiro}",
     
-    "antlr"      : "antlr:antlr:2.7.7",
+    "antlr"         : "antlr:antlr:2.7.7",
     
     "logging-api": "commons-logging-api:commons-logging-api:1.1",
     "beanutils"  : "commons-beanutils:commons-beanutils:1.8.0",
