@@ -25,7 +25,7 @@ eclipse {
 }
 
 sourceSets{
-  description  = "第八章 jsp标签"
+  description  = "第九章 jsp标签"
     main{
         java{srcDir "src/main/java"}
         resources{srcDir "src/main/resources"}

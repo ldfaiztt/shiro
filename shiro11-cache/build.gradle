@@ -25,7 +25,7 @@ eclipse {
 }
 
 sourceSets{
-  description  = "第八章 缓存机制"
+  description  = "第十一章 缓存机制"
     main{
         java{srcDir "src/main/java"}
         resources{srcDir "src/main/resources"}

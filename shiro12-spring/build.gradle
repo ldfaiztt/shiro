@@ -25,7 +25,7 @@ eclipse {
 }
 
 sourceSets{
-  description  = "第八章 与Spring集成"
+  description  = "第十二章 与Spring集成"
     main{
         java{srcDir "src/main/java"}
         resources{srcDir "src/main/resources"}

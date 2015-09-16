@@ -25,7 +25,7 @@ eclipse {
 }
 
 sourceSets{
-  description  = "第八章 会话管理"
+  description  = "第十章 会话管理"
     main{
         java{srcDir "src/main/java"}
         resources{srcDir "src/main/resources"}
