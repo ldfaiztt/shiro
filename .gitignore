@@ -57,3 +57,16 @@ hs_err_pid*
 /shiro10-session/.settings
 /shiro10-session/.project
 /shiro10-session/.classpath
+/shiro11-cache/.project
+/shiro11-cache/.classpath
+/shiro11-cache/.settings
+/shiro12-spring/.project
+/shiro12-spring/.classpath
+/shiro12-spring/.settings
+/shiro02-authentication/.settings
+/shiro13-remember_me/*.classpath
+/shiro13-remember_me/*.project
+/shiro13-remember_me/.settings
+/shiro16-colligate/.settings
+/shiro16-colligate/.project
+/shiro16-colligate/.classpath
