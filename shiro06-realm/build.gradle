@@ -1,36 +1,20 @@
-apply plugin: 'maven'
-
 // jar包的名字
 archivesBaseName = 'shiro06-realm'
+description  = "第六章 Realm及相关对象"
 
 eclipse {
 	project {
 		name = 'shiro06-realm'
 	}
 }
-sourceSets{
-  description  = "第六章 Realm及相关对象"
-    main{
-        java{srcDir "src/main/java"}
-        resources{srcDir "src/main/resources"}
-    }
-    test{
-        java{srcDir "src/test/java"}
-        resources{srcDir "src/test/resources"}
-    }
-}
-
 dependencies {
-
     compile (
        libraries.'ehcache-core',
        libraries.'spring-jdbc',
        libraries.'mysql',
        libraries.'druid'
     )
-    
     testCompile(
-    	
     
     )
 }

@@ -6,7 +6,7 @@ apply plugin: 'maven'
 
 // jar包的名字
 archivesBaseName = 'shiro13-remember_me'
-
+description  = "第十三章 RememberMe"
 eclipse {
 	project {
 		name = 'shiro13-remember_me'
@@ -23,19 +23,6 @@ eclipse {
         }
 	}
 }
-
-sourceSets{
-  description  = "第十三章 RememberMe"
-    main{
-        java{srcDir "src/main/java"}
-        resources{srcDir "src/main/resources"}
-    }
-    test{
-        java{srcDir "src/test/java"}
-        resources{srcDir "src/test/resources"}
-    }
-}
-
 
 dependencies {
 

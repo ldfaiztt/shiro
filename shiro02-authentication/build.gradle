@@ -1,7 +1,6 @@
-apply plugin: 'maven'
-
 // jar包的名字
 archivesBaseName = 'shiro02-authentication'
+description  = "第二章  身份验证"
 
 eclipse {
 	project {
@@ -9,27 +8,13 @@ eclipse {
 	}
 }
 
-sourceSets{
-  description  = "第二章  身份验证"
-    main{
-        java{srcDir "src/main/java"}
-        resources{srcDir "src/main/resources"}
-    }
-    test{
-        java{srcDir "src/test/java"}
-        resources{srcDir "src/test/resources"}
-    }
-}
 dependencies {
-
     compile (
        libraries.'beanutils',
        libraries.'mysql',
        libraries.'druid'
     )
-    
     testCompile(
-    	
     
     )
 }

@@ -1,27 +1,13 @@
-apply plugin: 'maven'
-
 // jar包的名字
 archivesBaseName = 'shiro07-web'
+description  = "第七章 与Web集成"
 
 eclipse {
 	project {
 		name = 'shiro07-web'
 	}
 }
-sourceSets{
-  description  = "第七章 与Web集成"
-    main{
-        java{srcDir "src/main/java"}
-        resources{srcDir "src/main/resources"}
-    }
-    test{
-        java{srcDir "src/test/java"}
-        resources{srcDir "src/test/resources"}
-    }
-}
-
 dependencies {
-
     compile (
        libraries.'beanutils',
        libraries.'servlet-api',
@@ -31,9 +17,7 @@ dependencies {
        libraries.'mysql',
        libraries.'druid'
     )
-    
     testCompile(
-    	
     
     )
 }
